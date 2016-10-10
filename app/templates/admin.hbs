@@ -1,0 +1,15 @@
+<h1>MailingList</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th>ID - E-mail</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each model as |emailSubscriber|}}
+    {{email-subscriber subscriber=emailSubscriber}}
+  {{/each}}
+  </tbody>
+</table>
+{{outlet}}

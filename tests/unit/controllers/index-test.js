@@ -41,6 +41,8 @@ test('isDisabled should return false when emailAddress is in valid format', func
 });
 
 test('saveInvitation should set responseMessage and clear emailAddress', function(assert) {
+  assert.expect(2);
+
   const controller = this.subject();
   const emailAddress = 'unicorn@magic.com';
 
